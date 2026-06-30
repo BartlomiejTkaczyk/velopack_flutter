@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1
+
+* Fixed mobile app builds by skipping the Rust build hook on unsupported iOS and Android targets
+* Declared desktop-only FFI plugin support for Linux, macOS, and Windows
+* Added `code_assets` as a direct dependency for build hook platform detection
+
 ## 0.3.0
 
 * Added release channel support: `initializeVelopack` now accepts an optional `channel` to override the update channel
