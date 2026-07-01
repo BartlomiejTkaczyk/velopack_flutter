@@ -3,6 +3,10 @@ description: "A flutter implementation of Velopack to enable easy distribution a
 version: 0.3.1
 repository: https://github.com/GigaDroid/velopack_flutter
 homepage: https://velopack.io/
+platforms:
+  linux:
+  macos:
+  windows:
 environment:
   sdk: '>=3.6.0 <4.0.0'
   flutter: '>=3.3.0'
