@@ -1,6 +1,6 @@
 name: velopack_flutter
 description: "A flutter implementation of Velopack to enable easy distribution and auto-updates for flutter apps"
-version: 0.3.1
+version: 0.3.2
 repository: https://github.com/GigaDroid/velopack_flutter
 homepage: https://velopack.io/
 platforms:
@@ -26,15 +26,6 @@ dev_dependencies:
   flutter_lints: ^6.0.0
   integration_test:
     sdk: flutter
-flutter:
-  plugin:
-    platforms:
-      linux:
-        ffiPlugin: true
-      macos:
-        ffiPlugin: true
-      windows:
-        ffiPlugin: true
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

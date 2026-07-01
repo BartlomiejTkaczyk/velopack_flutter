@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2
+
+* Added top-level desktop platform metadata so pub.dev correctly lists Linux, macOS, and Windows support
+* Removed desktop `ffiPlugin` declarations to avoid CocoaPods looking for unsupported platform folders during builds
+
 ## 0.3.1
 
 * Fixed mobile app builds by skipping the Rust build hook on unsupported iOS and Android targets
