@@ -2,8 +2,13 @@ import 'package:code_assets/code_assets.dart';
 import 'package:hooks/hooks.dart';
 import 'package:native_toolchain_rust/native_toolchain_rust.dart';
 
-void main(List<String> args) async {
+Future<void> main(List<String> args) async {
   await build(args, (input, output) async {
+    // Flutter can invoke the hook without requesting native code assets.
+    if (!input.config.buildCodeAssets) {
+      return;
+    }
+
     final targetOS = input.config.code.targetOS;
 
     if (targetOS == OS.iOS || targetOS == OS.android) {
